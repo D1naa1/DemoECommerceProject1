@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+        <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "RegressionTest">
+
+   <test name = "test1" preserve-order="true">
+      <classes>
+         <class name = "test.CheckOutTest" />
+         <class name = "test.ContactUsTest" />
+         <class name = "test.AddToWishListTest" />
+         <class name = "test.EmailProductToFriendTest" />
+         <class name = "test.HomeTest" />
+         <class name = "test.HoverMenuTest" />
+         <class name = "test.CompareProductTest" />
+</classes>
+   </test>
+</suite>
