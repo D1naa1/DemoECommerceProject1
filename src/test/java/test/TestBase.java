@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
     public WebDriver driver;
 
-@BeforeSuite
+@BeforeClass
     public void StartDriver (){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -20,7 +20,7 @@ public class TestBase {
         driver.get("https://demo.nopcommerce.com/");
     }
 
-    @AfterSuite
+    @AfterClass
     public void QuitDriver(){
     driver.quit();
     }
